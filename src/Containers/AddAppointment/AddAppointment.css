@@ -1,0 +1,106 @@
+.AddAppointment {
+    position: absolute;
+}
+
+.AddAppointment__container {
+    width: 600px;
+    height: 800px;
+    background-color: black;
+    border-radius: 2vh;
+    padding: 2vh;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.AddAppointment__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+}
+
+.AddAppointment__input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1vh;
+}
+
+.AddAppointment__input-label {
+    font-size: 1.1rem;
+}
+
+.AddAppointment__input {
+    width: 400px;
+    border-radius: 1vh;
+    height: 1.5rem;
+    padding: 1vh;
+    font-family: Inter;
+    font-size: 0.8rem;
+    border: 2px cornflowerblue solid;
+}
+
+.AddAppointment__dropdown {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+}
+
+.AddAppointment__dropdown-selected {
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 2px cornflowerblue solid;
+    background-color: transparent;
+    border-radius: 1vh;
+    padding: 1vh 2vh;
+    width: inherit;
+    cursor: pointer;
+}
+
+.AddAppointment__dropdown-menu {
+    border: 2px cornflowerblue solid;
+    background-color: cornflowerblue;
+    font-size: 1rem;
+    padding: 1vh 0;
+    border-radius: 1vh;
+    width: 170px;
+    height: 0;
+    gap: 0.4vh;
+    padding: 1vh;
+    display: none;
+}
+
+.AddAppointment__dropdown-item {
+    text-decoration: none;
+    color: black;
+    transition: 0.15s ease-in-out;
+}
+
+.AddAppointment__dropdown-item:hover {
+    color: gray;
+}
+
+.AddAppointment__dropdown-menu.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
+
+.AddAppointment__submit {
+    display: flex;
+    font-family: Inter;
+    padding: 1vh 2vh;
+    border: 2px cornflowerblue solid;
+    border-radius: 1vh;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: dodgerblue;
+}

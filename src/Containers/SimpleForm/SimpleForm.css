@@ -1,0 +1,119 @@
+.SimpleForm {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.SimpleForm__container {
+    background-color: lightgray;
+    width: 600px;
+    height: 800px;
+    margin: 2vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2vh;
+    padding: 2vh;
+    gap: 2vh;
+}
+
+.SimpleForm__create-button {
+    font-family: Inter;
+    border: 2px solid cornflowerblue;
+    border-radius: 1vh;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: transparent;
+    padding: 1vh 2vh;
+    transition: 0.15s ease-in-out;
+    cursor: pointer;
+}
+
+.SimpleForm__create-button:hover {
+    background-color: gray;
+    color: #F1F1F1;
+}
+
+.SimpleForm__content {
+    background-color: darkslateblue;
+    border-radius: 1vh;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+.SimpleForm__appointment--empty {
+    user-select: none;
+    font-size: 1.2rem;
+    color: #F1F1F1;
+    font-weight: 500;
+}
+
+.SimpleForm__appointment-container {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+    margin: 1vh;
+}
+
+.SimpleForm__appointment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+    font-size: 1rem;
+    background-color: dimgray;
+    padding: 3vh;
+    color: #F1F1F1;
+    border-radius: 2vh;
+
+}
+
+.SimpleForm__appointment--change-approval {
+    padding: 1vh 2vh;
+    border: 2px cornflowerblue solid;
+    border-radius: 1vh;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 1rem;
+    font-family: Inter;
+    color: #F1F1F1;
+    transition: 0.15s ease-in-out;
+}
+
+.SimpleForm__appointment--change-approval:hover {
+    background-color: dodgerblue;
+}
+
+.AddAppointment__transition-enter {
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.AddAppointment__transition-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.2s ease-in, opacity 0.2s ease-in;
+}
+
+.AddAppointment__transition-exit {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.AddAppointment__transition-exit-active {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 0.2s ease-in, opacity 0.2s ease-in;
+}
