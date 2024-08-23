@@ -67,7 +67,6 @@ const SimpleForm = () => {
         handleSetShowAddAppointment(false);
 
     }
-    console.log(appointment);
 
     return (
         <div className="SimpleForm">

@@ -6,7 +6,7 @@ import './main.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename='/'>
+    <BrowserRouter basename='/SimpleForm/'>
       <App />
     </BrowserRouter>
   </StrictMode>
