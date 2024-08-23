@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Appointment from "../Appointment/Appointment";
 import AddAppointment from "../AddAppointment/AddAppointment";
 import { CSSTransition } from "react-transition-group";
 import { AnimatePresence } from "framer-motion";
